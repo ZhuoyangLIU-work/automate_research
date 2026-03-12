@@ -10,7 +10,7 @@ A Claude skill for deep academic literature research and synthesis. Given a set 
 ### `literature-researcher-verbose/` (Verbose)
 351 lines. Same protocol with more detailed explanations and examples at each step. Use this if you want the skill to have more guidance on edge cases.
 
-## The 9-Step Protocol
+## The Protocol
 
 1. **Intake Protocol** -- Catalog papers with a unified indexing system (`NNN-S/D-YYYY-Author-Title`), cluster by assumptions, expand small seed sets via web search
 2. **Contradiction Finder** -- Identify direct contradictions between authors, diagnose why they disagree
