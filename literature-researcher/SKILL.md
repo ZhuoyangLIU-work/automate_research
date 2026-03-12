@@ -197,7 +197,41 @@ fast-moving fields, check lab blogs and arXiv for unpublished work. When only an
 accessible, say so — don't pretend you've read the full text. Mark each paper's access status
 (full text / abstract only / inaccessible). Keep a running list of all search-added papers.
 
+## Handling Large Corpora (Critical for >3 papers or >30 total pages)
+
+Large PDF sets will exceed output limits if processed naively. Follow this protocol:
+
+### Phase 0 — Inventory (before reading any content)
+
+List all files in the folder. Count them. Estimate total page count. Report to the user:
+"Found N papers, estimated ~X pages. Processing one at a time."
+
+### Phase 1 — Sequential Reading
+
+Process PDFs **one at a time**. For each paper:
+
+1. Read the PDF (use `pages` parameter for large PDFs — read 15-20 pages per call max)
+2. Extract: title, authors, year, venue, core claim (one sentence), methodology, key findings
+3. **Append** a structured entry to a working file `_working_notes.md` immediately
+4. Move to the next paper
+
+**Never** try to read all papers before writing anything. Write notes after each paper.
+
+### Phase 2 — Step Execution
+
+When executing Steps 1-9, work from `_working_notes.md` rather than re-reading full PDFs.
+Only re-read a specific PDF section when you need to verify a claim or resolve ambiguity.
+
+### Output Size Rules
+
+- Each step's output file should be **under 4,000 words**. If a step needs more, split into parts
+  (e.g., `02_contradictions_part1.md`, `02_contradictions_part2.md`)
+- Never try to produce more than one step's output in a single response
+- After completing each step's file, report a brief summary to the user before proceeding
+
 ## User-Provided Files
 
-Read each uploaded PDF thoroughly before starting. Extract metadata (title, authors, year, venue,
-abstract, findings). If unreadable or corrupted, tell the user immediately.
+Read each uploaded PDF **one at a time** following the "Sequential Reading" protocol above.
+Extract metadata (title, authors, year, venue, abstract, findings). If a PDF is longer than
+20 pages, read it in chunks using the `pages` parameter. If unreadable or corrupted, tell
+the user immediately and continue with the remaining papers.
