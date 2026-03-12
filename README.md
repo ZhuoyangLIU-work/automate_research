@@ -31,7 +31,23 @@ A Claude skill for deep academic literature research and synthesis. Given a set 
 
 ## Installation
 
-Copy the `.skill` file for your preferred version into your Claude skills directory, or install via the Claude desktop app.
+**Option A — Copy the skill folder (recommended)**
+
+Clone this repo (or download the folder) and copy your preferred version into your Claude skills directory:
+
+```bash
+# Condensed (recommended)
+cp -r literature-researcher/ ~/.skills/skills/
+
+# Verbose
+cp -r literature-researcher-verbose/ ~/.skills/skills/
+```
+
+Each folder contains a single `SKILL.md` file, which is all Claude needs to load the skill.
+
+**Option B — Use the .skill package**
+
+Download the `.skill` file from this repo and install it via the Claude desktop app.
 
 ## License
 
