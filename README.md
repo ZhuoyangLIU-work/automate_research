@@ -36,3 +36,7 @@ Copy the `.skill` file for your preferred version into your Claude skills direct
 ## License
 
 MIT
+
+## Acknowledgments
+
+The 9-step protocol used in this skill was inspired by a prompt framework shared by [@ai.tools_hub on Threads](https://www.threads.com/@ai.tools_hub/post/DVvSJQ7kceB), which outlined a set of research prompts for turning Claude into a literature research co-pilot. The step names (Contradiction Finder, Citation Chain, Gap Scanner, Assumption Killer, etc.) and overall structure originate from that work.
