@@ -1,0 +1,39 @@
+# Automate Research
+
+A Claude skill for deep academic literature research and synthesis. Given a set of papers (or just a topic), it runs a systematic 9-step protocol that goes far beyond summarization -- finding contradictions, tracing citation chains, scanning for gaps, auditing methodologies, and surfacing hidden assumptions.
+
+## Two Versions
+
+### `literature-researcher/` (Condensed -- Recommended)
+203 lines. Tighter instructions, better test performance, faster execution, fewer tokens. Start here.
+
+### `literature-researcher-verbose/` (Verbose)
+351 lines. Same protocol with more detailed explanations and examples at each step. Use this if you want the skill to have more guidance on edge cases.
+
+## The 9-Step Protocol
+
+1. **Intake Protocol** -- Catalog papers with a unified indexing system (`NNN-S/D-YYYY-Author-Title`), cluster by assumptions, expand small seed sets via web search
+2. 2. **Contradiction Finder** -- Identify direct contradictions between authors, diagnose why they disagree
+   3. 3. **Citation Chain** -- Trace the intellectual lineage of the 3 most-cited concepts, with Mermaid diagrams
+      4. 4. **Gap Scanner** -- Find the 5 most significant unanswered research questions, ranked by impact
+         5. 5. **Methodology Audit** -- Compare methods across papers, find what dominates, what's underused, what's weakest
+            6. 6. **Master Synthesis** -- Field-level synthesis (max 500 words) of consensus, debates, and proven claims
+               7. 7. **Assumption Killer** -- Surface hidden assumptions the field relies on but never tests
+                  8. 8. **Knowledge Map** -- Structured outline of the field's architecture with Mermaid diagram
+                     9. 9. **"So What" Test** -- Plain-language summary for a smart non-expert
+                        10.
+                        11. ## Features
+                        12.
+                        13. - **Unified paper indexing** -- Every paper gets a traceable code (e.g., `[001-S]`, `[003-D]`) used consistently across all 9 steps
+                            - - **Web search integration** -- Searches Google Scholar, arXiv, top lab blogs (DeepMind, OpenAI, Anthropic, etc.), SSRN, and paywalled databases via institutional library access
+                              - - **Visual outputs** -- Mermaid diagrams for citation chains and knowledge maps
+                                - - **Flexible execution** -- Run all steps automatically, pause at checkpoints, or go step-by-step
+                                  -
+                                  - ## Installation
+                                  -
+                                  - Copy the `.skill` file for your preferred version into your Claude skills directory, or install via the Claude desktop app.
+                                  -
+                                  - ## License
+                                  -
+                                  - MIT# automate_research
+Claude skill for deep academic literature research — 9-step protocol for contradiction detection, citation chain tracing, gap scanning, methodology auditing, and field synthesis.
