@@ -1,0 +1,26 @@
+{
+  "skill_name": "literature-researcher",
+  "evals": [
+    {
+      "id": 1,
+      "name": "rag-small-seed",
+      "prompt": "I'm researching retrieval-augmented generation (RAG) for LLMs. Here are 2 papers to start with: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks' by Lewis et al. 2020 and 'Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection' by Asai et al. 2023. Run all steps automatically.",
+      "expected_output": "Complete 9-step analysis with indexed papers, contradiction table, citation lineage with mermaid diagram, gap analysis, methodology audit, 500-word synthesis, assumption analysis, knowledge map with mermaid diagram, and so-what summary. Papers should be indexed with NNN-S/D format. Additional papers should be found and downloaded to expand the small seed set.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "cot-reasoning-no-seed",
+      "prompt": "I want to understand the current state of research on chain-of-thought prompting and reasoning in large language models. I don't have papers to start - find the key works yourself. Run all steps automatically.",
+      "expected_output": "Complete 9-step analysis where all papers are found via web search (all indexed as D). Should cover foundational CoT work (Wei et al.), zero-shot CoT, self-consistency, tree-of-thought, and recent reasoning advances. All 9 output files produced with proper indexing throughout.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "llm-scientific-discovery",
+      "prompt": "I'm looking at how LLMs are being used for scientific discovery - protein folding, drug design, materials science. Seed papers: 'Highly accurate protein structure prediction with AlphaFold' by Jumper et al. 2021, and 'A generalist AI agent for accelerating scientific discovery' by Google DeepMind 2023. Pause after every step so I can steer.",
+      "expected_output": "Step 1 intake with indexed papers (2 seeded + downloaded expansions), then pause for user input. Papers indexed with NNN-S/D format. Should identify that seed set is small and expand it. Cross-disciplinary nature should be reflected in clustering.",
+      "files": []
+    }
+  ]
+}
