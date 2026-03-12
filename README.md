@@ -39,4 +39,4 @@ MIT
 
 ## Acknowledgments
 
-The 9-step protocol used in this skill was inspired by a prompt framework shared by [@ai.tools_hub on Threads](https://www.threads.com/@ai.tools_hub/post/DVvSJQ7kceB), which outlined a set of research prompts for turning Claude into a literature research co-pilot. The step names (Contradiction Finder, Citation Chain, Gap Scanner, Assumption Killer, etc.) and overall structure originate from that work.
+The 9-step protocol used in this skill was inspired by a prompt framework originally shared by [Jainam Parmar (@aiwithjainam) on X](https://x.com/aiwithjainam), which outlined a set of research prompts for turning Claude into a literature research co-pilot. The step names (Contradiction Finder, Citation Chain, Gap Scanner, Assumption Killer, etc.) and overall structure originate from that work.
